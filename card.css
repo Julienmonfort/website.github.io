@@ -1,0 +1,40 @@
+.cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.card:hover {
+    transform: scale(1.05); /* Augmente légèrement la taille de la card au survol */
+}
+
+.card {
+    max-width: 300px;
+    margin: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 4px;
+    padding: 20px;
+    background: white;
+    transition: transform 0.3s ease; /* Ajoute une transition fluide sur la transformation */
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.card h4 {
+    margin: 10px 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Ajouter une ombre */
+    background color:#333;
+    display: block; 
+    z-index: 1;
+}
+
+.card p {
+    color: #666;
+    font-size: 0.9em;
+}
